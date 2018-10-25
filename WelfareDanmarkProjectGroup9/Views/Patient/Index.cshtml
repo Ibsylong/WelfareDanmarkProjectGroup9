@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model IEnumerable<WelfareDanmarkProjectGroup9.Models.Patient>
+
+
+@*@Html.Partial("_counter")*@
+
+<h1>Patients <span>Total:@Model.Count()</span></h1>
+
+<div id="patients-table">
+
+    @foreach (var patient in Model)
+    {
+        <img src="#" />
+
+        <div class="patients-info">
+            <h2>@patient.Firstname @patient.Lastname</h2>
+            <ul>
+                <li>@patient.Gender, @patient.Age</li>
+                <li>@patient.TypeOfDementia</li>
+            </ul>
+        </div>
+
+        <div class="patients-cg-info">
+            <h2>Caregiver</h2>
+
+            <ul>
+                <li>@patient.CaregiverName</li>
+                <li>@patient.CaregiverPhone</li>
+            </ul>
+
+            <img src="#" />
+        </div>
+
+        <div class="patients-options">
+            <ul>
+                <li><a href="#">&cross;</a></li>
+            </ul>
+        </div>
+    }
+
+
+
+</div>
