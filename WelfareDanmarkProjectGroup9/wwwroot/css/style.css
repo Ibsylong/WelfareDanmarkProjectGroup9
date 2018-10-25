@@ -1,0 +1,133 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.topnav {
+    height: 99px;
+    width: 100%;
+    padding-right: 100px;
+    line-height: 100px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgray;
+    
+}
+
+.topnav input[type=text] {
+        margin-left: 100px;
+        height: 30px;
+        width: 200px;
+        background-color: #F1F1F1;
+        background-image: url('search.png');
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 25px;
+        margin-top: 20px;
+}
+
+.topnav i {
+    position:absolute;
+    left:180px;
+    top:42px;
+    color:grey;
+}
+
+.topnav .button {
+    margin-left: 25px;
+    height:30px;
+    /*width:125px;*/
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: black;
+    text-align:start;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    display:inline-block;
+    font-weight: normal;
+}
+
+.topnav .button:not(:last-child) {
+    border-right: none; 
+}
+
+.topnav .button:hover {
+    background-color: white;
+}
+
+
+
+.hello {
+    color: red;
+}
+
+.sidebar {
+    height: 100%;
+    width: 74px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1; 
+    border-style: solid;
+    border-right-width: 1px;
+    border-right-color: lightgray;
+}
+
+
+
+.logo {
+    height: 100px;
+    width: 75px;
+    background-color: #4cff00;
+    text-align: center;
+    vertical-align: middle;
+    line-height:100px;
+    float:left;
+}
+
+.maincontent {
+    margin-left: 74px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.a_button {
+    width: 74px;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.b_button {
+    width: 74px;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.c_button {
+    width: 74px;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    background-color:red;
+
+}
