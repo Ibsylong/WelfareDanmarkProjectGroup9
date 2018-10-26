@@ -29,16 +29,17 @@
 <body>
     <section class="top">
         
-        <div class="logo">
+        <a  href="@Url.Action("Index", "Home")"class="logo">
             logo
-        </div>
+        </a>
         <!-- Search bar -->
 
         <div class="topnav">
 
             <input type="text" name="name" value="" placeholder="Search..." />
             <i class="fa fa-search"></i>
-            <a href="#" class="button">Add patient</a>
+            <a href="@Url.Action("Index", "Patient")" class="button"><span id="button-text">Add patient</span></a>
+            <img src="~/images/eye-doctor-headshot.jpg" class="profile-pic">
 
         </div>
 

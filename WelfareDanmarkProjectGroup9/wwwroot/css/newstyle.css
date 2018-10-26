@@ -32,39 +32,42 @@
     .topnav i {
         position: absolute;
         left: 180px;
-        top: 42px;
+        top: 30px;
         color: grey;
     }
 
     .topnav .button {
         margin-left: 25px;
-        /*height: 30px;*/
-        /*width:125px;*/
         background-color: white;
         border: 1px solid lightgrey;
+        /*height: 30px;*/
         color: black;
         text-decoration: none;
         vertical-align: middle;
         cursor: pointer;
         display: inline-block;
         font-weight: normal;
-        padding: 1% 2%;
-        margin: 1%;
+        padding: 1%;
+        
     }
 
         .topnav .button:not(:last-child) {
-            border-right: none;
+            border-right: 1px solid lightgrey;
         }
 
         .topnav .button:hover {
-            background-color: white;
+            background-color: lightgray;
         }
 
+    #button-text{
+       margin-bottom: 100%;
+       padding-bottom: 1%;
+    }
 
 
-.hello {
-    color: red;
-}
+    .hello {
+        color: red;
+    }
 
 .sidebar {
     height: 100%;
@@ -170,6 +173,37 @@ div.sidebar img {
     border: 1px solid black;
 }
 
+.profile-pic{
+    margin-top: 5px;
+    float: right;
+    height: 75px;
+    width: 75px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
 
+#messages {
+    border: 1px solid lightgrey;
+    padding: 5%;
+    margin: 2% 25%;
+    text-align:left;
 
+}
+#chat-message textarea{
+    border: 1px solid lightgrey;
+    width: 50%;
+}
 
+#message-send button {
+    margin-left: 25px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    /height: 30px;*/
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    padding: 0% 3%;
+}
