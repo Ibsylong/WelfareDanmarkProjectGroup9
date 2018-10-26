@@ -2,31 +2,43 @@
     Layout = "_Layout";
 }
 
-<div id="chat">
-    <div id="chatbox">
-        <div id="messages">
-            <div class="message"></div>
-        </div>
-
-        <div id="chat-message">
-            <textarea>sdfsdsdfs</textarea>
-
-            <div id="message-options">
-            </div>
-
-            <div id="message-send">
-                <a href="#">
-                    <button><img src="#" /></button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div id="chat-aside">
-        <ul>
-            <li>Marie Smith</li>
-            <li>John Doe (2)</li>
-            <li>Lisa Steeles (1)</li>
-            <li>Joanne Johnson</li>
-        </ul>
-    </div>
+<div class="sidebar">
+    <ul>
+        <li><a href="@Url.Action("Index", "Home")" class="a_button"><img src="~/images/home.png" /></a></li>
+        <li> <a href="@Url.Action("Index", "Patient")" class="a_button"><img src="~/images/user.png" /></a></li>
+        <li><div class="arrow-right"></div><a href="@Url.Action("Index", "Chat")" class="a_button"><img src="~/images/chat.png" /></a></li>
+        <li><a href="@Url.Action("Index", "Calendar")" class="a_button"><img src="~/images/calendar.png" /></a></li>
+        <li><a href="@Url.Action("Index", "Feedback")" class="a_button"><img src="~/images/reports.png" /></a></li>
+    </ul>
 </div>
+
+<div class="maincontent">
+    <div id="chat">
+        <div id="chatbox">
+            <div id="messages">
+                <div class="message"></div>
+            </div>
+
+            <div id="chat-message">
+                <textarea>sdfsdsdfs</textarea>
+
+                <div id="message-options">
+                </div>
+
+                <div id="message-send">
+                    <a href="#">
+                        <button><img src="#" /></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="chat-aside">
+            <ul>
+                <li>Marie Smith</li>
+                <li>John Doe (2)</li>
+                <li>Lisa Steeles (1)</li>
+                <li>Joanne Johnson</li>
+            </ul>
+        </div>
+    </div>
+ </div>

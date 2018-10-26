@@ -2,46 +2,149 @@
     Layout = "_Layout";
 }
 
-<h1>Latest Activities</h1>
-
-<div id="latest-activities">
-    <div class="latest-activity">
-
-        <span>
-            10/03/2018
-            <br />02:00 PM
-        </span>
-
-        <img src="#" />
-        <h2>Marie Smith</h2>
-        <p>Has finished the exercise</p>
-    </div>
+<div class="sidebar">
+    <ul>
+        <li><div class="arrow-right"></div><a href="@Url.Action("Index", "Home")" class="a_button"><img src="~/images/home.png" /></a></li>
+        <li> <a href="@Url.Action("Index", "Patient")" class="a_button"><img src="~/images/user.png" /></a></li>
+        <li><a href="@Url.Action("Index", "Chat")" class="a_button"><img src="~/images/chat.png" /></a></li>
+        <li><a href="@Url.Action("Index", "Calendar")" class="a_button"><img src="~/images/calendar.png" /></a></li>
+        <li><a href="@Url.Action("Index", "Feedback")" class="a_button"><img src="~/images/reports.png" /></a></li>
+    </ul>
 </div>
 
-<div id="upcoming-consultations">
-    <h1>Upcoming Consultations</h1>
-    <button>Edit Consultations</button>
+<div class="maincontent">
+    <h1>Latest Activities</h1>
 
-    <div class="consultation">
-        <img src="#" />
+    <div id="latest-activities">
+        <div class="latest-activity">
 
-        <div class="consultation-info">
-            <h3>Lisa Steeles</h3>
+            <span>
+                10/03/2018
+                <br />02:00 PM
+            </span>
 
-            <ul>
-                <li>Date: October 13, 2018</li>
-                <li>Time: 9:00 PM</li>
-            </ul>
+            <img src="#" />
+            <h2>Marie Smith</h2>
+            <p>Has finished squats</p>
         </div>
+        <div class="latest-activity">
 
-        <div class="consultation-activity">
-            <ul>
-                <li><b>Latest Activity</b>: Jumping Jacks</li>
-                <li><b>Date</b>: 10/03/2018</li>
-                <li><b>Overall leaderboard</b>: 3rd</li>
-            </ul>
+            <span>
+                10/03/2018
+                <br />07:10 AM
+            </span>
+
+            <img src="#" />
+            <h2>Jon Doe</h2>
+            <p>Has finished sidesteps</p>
+        </div>
+        <div class="latest-activity">
+
+            <span>
+                10/03/2018
+                <br />11:30 AM
+            </span>
+
+            <img src="#" />
+            <h2>Lisa Steeles</h2>
+            <p>Has finished jumping jack</p>
+        </div>
+        <div class="latest-activity">
+
+            <span>
+                10/02/2018
+                <br />01:14 PM
+            </span>
+
+            <img src="#" />
+            <h2>Jon Doe</h2>
+            <p>Has finished burpees</p>
         </div>
     </div>
 
+    @*Upcoming Consultations*@
+    @*<div id="upcoming-consultations">
+            <h1>Upcoming Consultations</h1>
+            <button>Edit Consultations</button>
 
+            <div class="consultation">
+                <img src="#" />
+
+                <div class="consultation-info">
+                    <h3>Lisa Steeles</h3>
+
+                    <ul>
+                        <li>Date: October 08, 2018</li>
+                        <li>Time: 9:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="consultation-activity">
+                    <ul>
+                        <li><b>Latest Activity</b>: Jumping Jacks</li>
+                        <li><b>Date</b>: 10/03/2018</li>
+                        <li><b>Overall leaderboard</b>: 3rd</li>
+                    </ul>
+                </div>
+
+                <img src="#" />
+
+                <div class="consultation-info">
+                    <h3>John Doe</h3>
+
+                    <ul>
+                        <li>Date: October 09, 2018</li>
+                        <li>Time: 7:10 AM</li>
+                    </ul>
+                </div>
+
+                <div class="consultation-activity">
+                    <ul>
+                        <li><b>Latest Activity</b>: Sidesteps</li>
+                        <li><b>Date</b>: 10/03/2018</li>
+                        <li><b>Overall leaderboard</b>: 2nd</li>
+                    </ul>
+                </div>
+
+                <img src="#" />
+
+                <div class="consultation-info">
+                    <h3>Marie Smith</h3>
+
+                    <ul>
+                        <li>Date: October 10, 2018</li>
+                        <li>Time: 10:00 AM</li>
+                    </ul>
+                </div>
+
+                <div class="consultation-activity">
+                    <ul>
+                        <li><b>Latest Activity</b>: Squats</li>
+                        <li><b>Date</b>: 09/03/2018</li>
+                        <li><b>Overall leaderboard</b>: 1st</li>
+                    </ul>
+                </div>
+
+                <img src="#" />
+
+                <div class="consultation-info">
+                    <h3>Johanne Johnson</h3>
+
+                    <ul>
+                        <li>Date: October 12, 2018</li>
+                        <li>Time: 9:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="consultation-activity">
+                    <ul>
+                        <li><b>Latest Activity</b>: Burpees</li>
+                        <li><b>Date</b>: 7/03/2018</li>
+                        <li><b>Overall leaderboard</b>: 4th</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>*@
 </div>

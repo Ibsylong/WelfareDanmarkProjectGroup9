@@ -45,7 +45,7 @@
 
     </section>
     <!-- Sidebar -->
-    <div class="sidebar">
+    @*<div class="sidebar">
         <ul>
             <li><div class="arrow-right"></div> <a href="@Url.Action("Index", "Home")" class="a_button"><img src="~/images/home.png" /></a></li>
             <li><a href="@Url.Action("Index", "Patient")" class="a_button"><img src="~/images/user.png" /></a></li>
@@ -53,14 +53,14 @@
             <li><a href="#" class="a_button"><img src="~/images/calendar.png" /></a></li>
             <li><a href="#" class="a_button"><img src="~/images/reports.png" /></a></li>
         </ul>
-    </div>
+    </div>*@
 
 
 
     <!-- Main content -->
-    <div class="maincontent">
+
         @RenderBody()
-    </div>
+
 
     @RenderSection("Scripts", required: false)
 </body>
